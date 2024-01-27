@@ -1,1 +1,3 @@
-private/
+private/.env
+node_modules
+.idea
