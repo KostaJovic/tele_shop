@@ -12,7 +12,7 @@ const http = require('http');
 http.createServer(function (req, res) {
     initialiseBot();
 }).listen(8080);
-
+ 
 function initialiseBot() {
     bot.start((ctx) => ctx.reply('Hi, ready to buy some products?'));
     bot.help((ctx) => ctx.reply('Send me a sticker'));
