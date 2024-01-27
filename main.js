@@ -1,10 +1,12 @@
+require('dotenv').config()
+
 const { Telegraf } = require('telegraf')
 const { message } = require('telegraf/filters')
 
 //token = "6724277597:AAGVODrxB0knWmJJtCKOmnGGxE7iKl_glKU"
 //const bot = new Telegraf(process.env.BOT_TOKEN)
 
-const token = "6724277597:AAGVODrxB0knWmJJtCKOmnGGxE7iKl_glKU";
+const token = process.env.BOT_TOKEN;
 const bot = new Telegraf(token);
 const http = require('http');
 
